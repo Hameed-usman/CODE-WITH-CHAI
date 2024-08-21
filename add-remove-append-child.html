@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append CHild WIth USman</title>
+</head>
+<body style="background-color: black; color: whitesmoke;">
+    
+    <ul class="head">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+
+<script>
+    function createli (language) {
+     const lang =  document.createElement(`li`);
+     lang.innerText = language;
+     document.querySelector(`.head`).append(lang);
+    }
+
+    createli (`Python`);
+    createli (`C++`);
+    createli (`JAva`);
+
+    // function advCreateLi (language) {
+    //     const lang = document.createElement(`li`);
+    //     const advLang = document.createTextNode (``);
+    //     lang.append(advLang);
+    // }
+    // advCreateLi (`Rubby`);
+
+    // HOW TO EDIT IN HTML FILE 
+
+    // const storeLi = document.querySelector("li:nth-child(4)");
+    // // console.log(storeLi);
+    // const createLi = document.createElement (`li`);
+    // createLi.innerText = `C`;
+    // storeLi.replaceWith(createLi);
+
+    // 2ND METHOD/EXAMPLE TO EDIT 
+    // const store = document.querySelector("div");
+    // const newLi = document.createElement(`div`);
+    // newLi.innerText = `Java`;
+    // store.replaceWith(newLi);
+
+    // 3RD EXAMPLE OF EDIT 
+
+    // const third = document.querySelector(`li:first-child`);
+    // third.innerText = `TypeScript`;
+
+    // NOW REMOVE METHOD 
+
+    // const remove = document.querySelector(`li:last-child`);
+    // remove.remove();
+
+
+</script>
+</html>

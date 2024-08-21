@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New NOde in JS</title>
+</head>
+<body style=" background-color: #000;
+        color: antiquewhite;">
+
+        
+    
+</body>
+<script>
+     const div =  document.createElement(`div`);
+    //  console.log(div);
+     div.className = `main`;
+     div.id = Math.round(Math.random()*5);
+     div.setAttribute (`title`,`first-genre`);
+     div.style.backgroundColor =  `green`;
+     div.innerText = `Usman Our FrontENd`;
+     document.body.append(div);
+     
+</script>
+</html>

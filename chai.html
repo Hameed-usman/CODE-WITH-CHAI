@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-WITH USMAN</title>
+<link rel="stylesheet" href="./chai.css">
+</head>
+<body>
+    <div class="parent">
+        <div id="child">Monday</div>
+        <div id="child">Tuesday</div>
+        <div id="child">Wednesday</div>
+        <div id="child">Thursday</div>
+        <div id="child">Friday</div>
+    </div>
+    
+
+</body>
+<script>
+        const parent = document.querySelector(`.parent`);
+        // console.log(parent.children[0].innerText);
+        for (i = 0; i < parent.children.length; i++){
+                   console.log(parent.children[i].innerText);
+        }
+
+        // parent.children[0].style.color = `red`;
+        // parent.children[0].style.backgroundColor = `pink`;
+        // console.log (parent.firstElementChild);
+        // console.log (parent.lastElementChild);
+        // console.log (`NODES :`,parent.childNodes)
+        
+</script>
+</html>
